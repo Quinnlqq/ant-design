@@ -179,7 +179,6 @@
 
   // ============================ Sorter ============================
   &-thead th.@{table-prefix-cls}-column-has-sorters {
-    padding: 0;
     cursor: pointer;
     transition: all 0.3s;
 
@@ -203,7 +202,7 @@
     display: inline-flex;
     align-items: center;
     width: 100%;
-    padding: @table-padding-vertical @table-padding-horizontal;
+    padding: 0;
   }
 
   &-column-sorter {
@@ -241,12 +240,11 @@
   &-filter-column {
     display: flex;
     align-items: center;
-    margin: -@table-padding-vertical -@table-padding-horizontal;
   }
 
   &-filter-column-title {
     flex: auto;
-    padding: @table-padding-vertical 2.3em @table-padding-vertical @table-padding-horizontal;
+    padding-right: 2.3em;
   }
 
   &-filter-trigger-container {
@@ -472,7 +470,6 @@
   // With fixed
   .@{table-prefix-cls}-expanded-row-fixed {
     position: relative;
-    margin: -@table-padding-vertical -@table-padding-horizontal;
     padding: @table-padding-vertical @table-padding-horizontal;
   }
 
